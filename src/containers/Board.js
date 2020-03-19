@@ -26,7 +26,7 @@ class Board extends Component {
 
   async componentDidMount() {
     try {
-      const tickets = await fetch('../../assets/db.json');
+      const tickets = await fetch('../../assets/data.json');
       const ticketJSON = await tickets.json();
 
       if(ticketJSON) {
